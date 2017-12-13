@@ -30,6 +30,9 @@ coverage
 build/
 dist/
 
+#backup for knex
+database/knexfilebackup.js
+database/knexSeedBackup.js
 
 # Dependency directorys
 # Deployed apps should consider commenting these lines out:

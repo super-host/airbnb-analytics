@@ -17,6 +17,7 @@
     "knex": "^0.14.2",
     "mysql": "^2.15.0",
     "nodemon": "^1.12.5",
+    "pg": "^7.4.0",
     "uglify-js2": "^2.1.11"
   },
   "devDependencies": {

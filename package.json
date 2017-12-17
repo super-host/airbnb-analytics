@@ -26,7 +26,8 @@
     "newrelic": "^2.4.2",
     "nodemon": "^1.12.5",
     "pg": "^7.4.0",
-    "uglify-js2": "^2.1.11"
+    "uglify-js2": "^2.1.11",
+    "why-is-node-running": "^1.2.3"
   },
   "devDependencies": {
     "eslint": "^4.11.0",

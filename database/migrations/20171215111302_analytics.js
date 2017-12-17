@@ -1,13 +1,13 @@
 
 exports.up = (knex, Promise) => {
   return Promise.all([
-    knex.schema.createTable('users', (table) => {
+    knex.schema.createTable('hosts', (table) => {
       table
         .increments('id')
         .unsigned()
         .primary();
       table
-        .integer('user_id')
+        .integer('host_id')
         .unsigned()
         .unique();
       table.boolean('superhost');
@@ -26,6 +26,7 @@ exports.up = (knex, Promise) => {
         .integer('price')
         .unsigned();
       table.string('accomodation_type');
+      table.integer('beds');
     }),
     knex.schema.createTable('bookingsviewings', (table) => {
       table
@@ -39,10 +40,10 @@ exports.up = (knex, Promise) => {
         .references('listing_id')
         .inTable('listings');
       table
-        .integer('user_id')
+        .integer('host_id')
         .unsigned()
-        .references('user_id')
-        .inTable('users');
+        .references('host_id')
+        .inTable('hosts');
       table
         .integer('bookings')
         .unsigned()

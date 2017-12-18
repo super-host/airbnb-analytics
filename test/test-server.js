@@ -1,8 +1,8 @@
+after(require('why-is-node-running'));
 const expect = require('chai').expect;
 const server = require('../server/server.js');
 const request = require('supertest');
 
-after(require('why-is-node-running'));
 //before 
 describe('Server tests', () => {
   it('Should return a status code of 200 for a GET request to /', (done) => {

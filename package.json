@@ -38,7 +38,7 @@
     "mocha": "^4.0.1"
   },
   "scripts": {
-    "test": "./node_modules/.bin/mocha --reporter spec",
+    "test": "node --expose-internals ./node_modules/.bin/mocha --reporter spec",
     "start": "nodemon server/server.js",
     "dev-start": "NODE_ENV=production nodemon server/server.js"
   },

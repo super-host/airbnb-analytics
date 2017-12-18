@@ -1,4 +1,4 @@
-after(require('why-is-node-running'));
+// require('why-is-node-running');
 const expect = require('chai').expect;
 const server = require('../server/server.js');
 const request = require('supertest');

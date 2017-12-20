@@ -19,7 +19,9 @@
     "faker": "^4.1.0",
     "git-it": "^1.6.9",
     "handlebars": "^4.0.11",
+    "http2": "^3.3.7",
     "knex": "^0.14.2",
+    "loadtest": "*",
     "moment": "^2.19.4",
     "moment-random": "^1.0.3",
     "mysql": "^2.15.0",
@@ -38,6 +40,7 @@
     "mocha": "^4.0.1"
   },
   "scripts": {
+    "rawStart": "NODE_ENV=production PORT=8000 nodemon server/rawNode.js",
     "test": "node ./node_modules/.bin/mocha --reporter spec --exit",
     "start": "nodemon server/server.js",
     "dev-start": "NODE_ENV=production PORT=8000 nodemon server/server.js"

@@ -37,7 +37,6 @@ async function manageView(data) {
 
 
 async function addBookCount(data) {
-  
   return await knex('bookingsviewings')
                 .where({
                   date: data.createdAt,

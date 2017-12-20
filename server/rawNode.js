@@ -29,15 +29,23 @@ const app = http.createServer((req, res) => {
 });
 
 async function processUpdate(data, res) {
-  let cont = await db.manageView(data);
-  res.writeHead(200, header);
-  res.end();
+  try {
+    let cont = await db.manageView(data);
+    res.writeHead(200, header);
+    res.end();
+  } catch(error) {
+    console.error(error);
+  }
 }
 
 async function addBookCount(data, res) {
-  let cont = await db.addBookCount(data);
-  res.writeHead(200, header);
-  res.end();
+  try {
+    let cont = await db.addBookCount(data);
+    res.writeHead(200, header);
+    res.end();
+  } catch(error) {
+    console.error(error);
+  }
 }
 
 app.listen(8000, '127.0.0.1');

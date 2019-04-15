@@ -1,26 +1,8 @@
 # Project Name
+Airbnb-Analytics
 
-The project description
-
-## Roadmap
-
-View the project roadmap [here](LINK_TO_DOC)
-
-## Contributing
-
-See [CONTRIBUTING.md](CONTRIBUTING.md) for contribution guidelines.
-
-# Table of Contents
-
-1. [Usage](#Usage)
-1. [Requirements](#requirements)
-1. [Development](#development)
-    1. [Installing Dependencies](#installing-dependencies)
-    1. [Tasks](#tasks)
-
-## Usage
-
-> Some usage instructions
+## Useage
+This is a back end microservice that is part of a full stack web app tht emulates of Airbnb. The analytics microservice receives data whenever the users create a requests on the front end microservice. It then updates the database based on different types of requests that the users created. (eg. viewing of a listing, booking a listing,...etc)
 
 ## Requirements
 
@@ -29,7 +11,5 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for contribution guidelines.
 - Postgresql 9.6.x
 - etc
 
-## Other Information
 
-(TODO: fill this out with details about your project. Suggested ideas: architecture diagram, schema, and any other details from your app plan that sound interesting.)
 
